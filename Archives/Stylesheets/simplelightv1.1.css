@@ -1,0 +1,223 @@
+/*-----Simplelight CSS-----*/
+/*-----Created by lightstuff-----*/
+/*-----Copyright 2018 by lightstuff-----*/
+
+/*-----Font Imports-----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/*-----Whitespace Reset/Normalize-----*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.5;
+}
+ol {
+    padding-left: 40px;
+    list-style: decimal;
+}
+ul {
+    padding-left: 40px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*-------------------
+    Header
+-------------------*/
+.header {
+    padding: 10px;
+    background-image: linear-gradient(#2350A0, #FFFFFF);
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+/*-----Name-----*/
+.name {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+    color: #FFFFFF;
+    float: left;
+}
+.nameLink:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.nameLink:hover {
+    text-decoration: underline;
+}
+/*-----Navagation-----*/
+.navLink:link {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #FFA500;
+    color: #FFFFFF;
+}
+.nav {
+    font-family: 'Roboto', sans-serif;
+    float: right;
+    font-size: 20px;
+}
+/*-----Title-----*/
+.title {
+    clear: both;
+    margin: auto;
+    text-align: center;
+    color: #000000;
+    padding: 30px;
+    max-width: 500px;
+}
+/*------Title Heading-----*/
+.titleHead {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 150px;
+    font-weight: normal;
+}
+/*-----Title Description-----*/
+.titleDesc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px;
+}
+/*-------------------
+    Page Body
+-------------------*/
+.body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    max-width: 1200px;
+}
+/*-----Main Body-----*/
+.mainBody {
+    margin: 0px 20px;
+    padding: 10px;
+    order: 2;
+    flex: 2;
+    -webkit-order: 2;
+    -webkit-flex: 2;
+    border-radius: 5px;
+    background-color: #FFC864;
+}
+/*-----Left Sidebar-----*/
+.sideLeft {
+    margin-left: 20px;
+    padding: 10px;
+    order: 1;
+    flex: 2;
+    -webkit-order: 1;
+    -webkit-flex: 1;
+    border-radius: 5px;
+    background-color: #FFC864;
+
+}
+/*-----Right Sidebar-----*/
+.sideRight {
+    margin-right: 20px;
+    padding: 10px;
+    order: 3;
+    flex: 2;
+    -webkit-order: 3;
+    -webkit-flex: 1;
+    border-radius: 5px;
+    background-color: #FFC864;
+}
+/*-------------------
+    Footer
+-------------------*/
+.footer {
+    width: auto;
+    padding: 20px;
+    background-color: #000000;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.copyright {
+    padding: 10px;
+    margin: 10px;
+    max-width: 350px;
+    -webkit-order: 1;
+    -webkit-flex: 1;
+    order: 1;
+    flex: 1;
+    color: #FFFFFF;
+}
+.extra {
+    padding: 10px;
+    margin: 10px;
+    max-width: 700px;
+    -webkit-order: 2;
+    -webkit-flex: 2;
+    order: 2;
+    flex: 2;
+    color: #FFFFFF;
+}
+.footLink {
+    display: block;
+}
+.footDesc {
+    font-size: 24px;
+}
+/*-------------------
+    General
+-------------------*/
+* {
+    font-family: 'Roboto';
+}
+/*-----Links-----*/
+a:link {
+    text-decoration: none;
+    color: #FFA500;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*-----Heading-----*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'Annie Use Your Telescope', 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 34px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 10px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 14px;
+}
+pre, code {
+    font-family: 'Roboto Mono', monospace;
+}

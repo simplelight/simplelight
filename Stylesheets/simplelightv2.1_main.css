@@ -1,0 +1,289 @@
+/*-----Simplelight Main CSS-----*/
+/*-----Version 2.1-----*/
+/*-----Created by lightstuff-----*/
+/*-----Copyright 2018 by lightstuff-----*/
+/*-----Updates-----
+Dropdown menu added
+Name description (nameDesc) removed
+-------------------*/
+
+/*-----Font Imports-----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i');
+@import url('https://fonts.googleapis.com/css?family=Annie+Use+Your+Telescope');
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono');
+
+/*-----Whitespace Reset/Normalize-----*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-family: 'Roboto', sans-serif;
+    vertical-align: baseline;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1.5;
+}
+ol {
+    padding-left: 40px;
+    list-style: decimal;
+}
+ul {
+    padding-left: 40px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+/*-------------------
+    General
+-------------------*/
+* {
+    font-family: 'Roboto';
+}
+/*-----Links-----*/
+p, ol, ul, li {
+    font-size: 15px;
+}
+a:link {
+    text-decoration: none;
+    color: #FF0000;
+}
+a:hover {
+    text-decoration: underline;
+}
+/*-----Heading-----*/
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-family: 'Annie Use Your Telescope', 'Roboto', sans-serif;
+}
+h1 {
+    font-size: 40px;
+}
+h2 {
+    font-size: 34px;
+}
+h3 {
+    font-size: 24px;
+}
+h4 {
+    font-size: 10px;
+}
+h5 {
+    font-size: 18px;
+}
+h6 {
+    font-size: 14px;
+}
+/*-----Images-----*/
+img {
+    width: 100%;
+}
+/*------Tags with momospaced fonts------*/
+pre, code {
+    font-family: 'Roboto Mono', monospace;
+}
+/*-------------------
+    Header
+-------------------*/
+.header {
+    padding: 10px;
+    background-image: linear-gradient(#2350A0, #FFFFFF);
+    background-size: auto 100%;
+    background-attachment: fixed;
+}
+/*-----Name-----*/
+.name {
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    display: block;
+    text-align: center;
+}
+.nameLink:link {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+.nameLink:hover {
+    text-decoration: underline;
+}
+/*-----Navagation-----*/
+.navLink:link {
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    margin: 5px;
+    border-radius: 10px;
+    background-color: #FFA500;
+    color: #FFFFFF;
+    flex: 1;
+    -webkit-flex: 1;
+}
+.nav {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    display; -webkit-flex;
+    flex-flow: row wrap;
+    -webkit-flex-flow: row wrap;
+    margin: auto;
+    max-width: 1200px;
+    width: auto;
+}
+/*-----Dropdown Navigation-----*/
+/*-----Warning!-----
+Warning! Dropdown navigation fools most screen readers.
+This causes inacessbility to some disabled people.
+Think about the target of your website before you use it.
+Trying to add your own stylesheet to the dropdowns may
+result in having a menu that you cannot use properly.
+Dropdown menus will not be responsive!
+--------------------*/
+.dropLink {
+    margin: 5px;
+    background-color: #FFC864;
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+}
+.dropLink:link {
+    margin: 5px;
+    background-color: #FFC864;
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    width: 100%;
+}
+.dropLink:hover {
+    margin: 5px;
+    background-color: #FFC864;
+    color: #FFFFFF;
+    padding: 10px;
+    text-decoration: none;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropContent {
+    display: none;
+    position: absolute;
+    background-color: #FFFFFF;
+    color: #000000;
+    min-width: 160px;
+    z-index: 1;
+    margin-top: 7px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.dropContent a {
+    color: #000000;
+    background-color: #FFFFFF;
+    padding: 12px;
+    text-decoration: none;
+    display: block;
+}
+.dropContent a:hover {
+    background-color: #FFC864;
+}
+.dropdown:hover .dropContent {
+    display: block;
+}
+/*-----Title-----*/
+.title {
+    margin: auto;
+    text-align: center;
+    color: #000000;
+    max-width: 500px;
+}
+/*------Title Heading-----*/
+.titleHead {
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-weight: normal;
+}
+/*-----Title Description-----*/
+.titleDesc {
+    font-family: 'Roboto', sans-serif;
+}
+/*-------------------
+    Page Body
+-------------------*/
+.body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: -webkit-flex;
+    display: flex;
+    flex-flow: row wrap;
+    width: auto;
+    max-width: 1200px;
+}
+/*-----Main Body-----*/
+.mainBody {
+    margin: 20px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #FFC864;
+}
+/*-----Left Sidebar-----*/
+.sideLeft {
+    margin: 20px;
+    padding: 10px;
+    order: 1;
+    -webkit-order: 1;
+    border-radius: 5px;
+    background-color: #FFC864;
+
+}
+/*-----Right Sidebar-----*/
+.sideRight {
+    margin: 20px;
+    padding: 10px;
+    order: 3;
+    -webkit-order: 3;
+    border-radius: 5px;
+    background-color: #FFC864;
+}
+/*-------------------
+    Footer
+-------------------*/
+.footer {
+    width: auto;
+    padding: 20px;
+    background-color: #000000;
+    display: -webkit-flex;
+    -webkit-flex-flow: row wrap;
+    -webkit-justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+.copyright {
+    padding: 10px;
+    margin: 10px;
+    max-width: 350px;
+    -webkit-order: 1;
+    -webkit-flex: 1;
+    order: 1;
+    flex: 1;
+    color: #FFFFFF;
+}
+.extra {
+    padding: 10px;
+    margin: 10px;
+    max-width: 700px;
+    -webkit-order: 2;
+    -webkit-flex: 2;
+    order: 2;
+    flex: 2;
+    color: #FFFFFF;
+}
+.footLink {
+    display: block;
+}
+.footDesc {
+    font-size: 24px;
+}

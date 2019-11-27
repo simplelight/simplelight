@@ -1,0 +1,2 @@
+All the stylesheets are in the Stylesheets folder. Copy and paste ALL of them to the location of your website project files. Only link the simplelight.css file to your HTML file except when you are using Mozilla Thimble, which does not accept @import. Instead, link the other two CSS files to your HTML file. Examples are in the Examples folder. Open the the simplelight.html file to see how a simplelight based website might look like. Previous versions of simplelight are in the Archives folder.
+-2018 lightstuff

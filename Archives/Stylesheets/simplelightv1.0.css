@@ -1,0 +1,26 @@
+/*-----Font Imports-----*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+@import url('https://fonts.googleapis.com/css?family=Comfortaa');
+
+/*-----Header-----*/
+.header {
+    background: linear-gradient(down, #000000, #DDDDDD);
+    width: 100%;
+}
+.title {
+    font-family: 'Comfortaa', cursive;
+    width: 30%;
+    font-size: 30px;
+    display: block;
+    text-align: left;
+}
+.nav {
+    font-family: 'Roboto', sans-serif;
+    width: 70%
+    display: block;
+    text-align: right;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 3px;
+    color: #FFFFFF;
+}
